@@ -6062,15 +6062,7 @@ host-suffix, s.yidianzixun.com, reject
 # hostname = api.17kjs.com
 ^https?:\/\/api\.17kjs\.com\/meta\/ads_targets url reject
 
-# > 一汽大众
-# hostname = oneapp-api.faw-vw.com
-^https?:\/\/oneapp-api\.faw-vw\.com\/search\/firstPage\/getPromptList\/v1\?.* url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/benefits\/benefitsCard\/getInfo\/v1\?.* url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/content\/booth\/getBoothList\/v1\?.*showPositionCode=VWAPP_HOME_BUOY url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/content\/booth\/getBoothList\/v1\?.*showPositionCode=VWAPP_(ICE|MEB)_(OPEN_SCREEN_ADS|CAR_ZHIHU_COLLEGE) url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/content\/booth\/getBoothList\/v1\?.*showPositionCode=VWAPP_(ICE|MEB)_HOME_(OWNER_BANNER|PROSPECTS_BANNER|CUSTOM_BANNER|KONGO|CUSTOM_KONGO) url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/content\/(customize\/getCustomizePageName|recommend\/getRecommendInfoFlows|activity\/getSquareActivityList|theme\/getThemeList|post\/getPostsByTags|evaluate\/getEvaluateCards)\/v1\?.* url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: [] }'
-^https?:\/\/oneapp-api\.faw-vw\.com\/content\/(collection\/getCollectionList)\/v1\?.* url jsonjq-response-body '. = { returnStatus: "SUCCEED", hasMore: false, data: {} }'
+
 
 # > 一淘
 # hostname = acs.m.taobao.com
